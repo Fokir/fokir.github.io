@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Мадрид - Виллы Испании</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="js/plugins/fancybox/jquery.fancybox.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jbcallme/jquery.jbcallme.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="js/plugins/vdrop/vdrop.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="header__banner">
+				<a class="banner" href="#"><img src="/uploads/banners/header-banner.jpg" alt="" class="banner__img"></a>
+			</div>
+			<div class="header__content">
+				<div class="row">
+					<div class="block block__left block__480">
+						<div class="header__menu-level-1">
+							<ul>
+								<li class="first"><a href="barselona/" title="Барселона">Барселона</a></li>
+								<li><a href="valensiya/" title="Валенсия">Валенсия</a></li>
+								<li><a href="alikante.html" title="Аликанте">Аликанте</a></li>
+								<li class="active"><a href="madrid/" title="Мадрид">Мадрид</a></li>
+								<li class="last"><a href="merbelya.html" title="Мербелья">Мербелья</a></li>
+							</ul>
+						</div>
+						<div class="header__menu-level-2">
+							<span class="header__menu-level-2-title">Покупка:</span>
+							<ul>
+								<li><a href="#">Квартиры</a></li>
+								<li><a href="#">Дома и Виллы</a></li>
+								<li><a href="#">Бизнес</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block block__center block__left block__380">
+						<p class="header__logo"><a href="">The Spain</a></p>
+						<p class="header__text">
+							Первый журнал о недвижемости во все Испании
+						</p>
+					</div>
+					<div class="block block__right block__480">
+						<div class="header__menu-level-1">
+							<ul>
+								<li class="first"><a href="o-proekte.html" title="О проекте">О проекте</a></li>
+								<li><a href="kompaniyam.html" title="Компаниям">Компаниям</a></li>
+								<li class="last"><a href="kontaktyi.html" title="Контакты">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="header__menu-level-2">
+							<span class="header__menu-level-2-title">Аренда:</span>
+							<ul>
+								<li><a href="#">Квартиры</a></li>
+								<li><a href="#">Дома и Виллы</a></li>
+								<li><a href="#">Бизнес</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="cl"></div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="map" id="map"></div>
+			<form action="" method="get" class="search-form">
+				<p class="search-form__title">Поиск в свободной форме</p>
+				<input type="text" class="search-form__input big" placeholder="Например, Коста Дорада">
+				<p class="search-form__title">Поиск по параметрам</p>
+				<div class="search-form__radio-buttons">
+					<span class="search-form__radio-buttons-item radio-button">
+			<input type="radio" id="pay" name="type" value="pay">
+			<label for="pay">
+				<div class="icon"></div>
+				Покупка
+			</label>
+		</span>
+					<span class="search-form__radio-buttons-item radio-button">
+			<input type="radio" id="arenda" name="type" value="arenda">
+			<label for="arenda">
+				<div class="icon"></div>
+				Аренда
+			</label>
+		</span>
+				</div>
+				<select class="search-form__select-city" name="" id="">
+		<option disabled selected>Выберите город</option>
+		<option value="20">Villa example</option>
+<option value="21">Villa example 1</option>
+<option value="22">Villa example 2</option>
+<option value="23">Villa example 3</option>
+<option value="24">Villa example 4</option>
+	</select>
+				<span class="search-form__check-box check-box">
+		<input type="checkbox" id="kv">
+		<label for="kv">Квартира</label>
+	</span>
+				<span class="search-form__check-box check-box">
+		<input type="checkbox" id="home">
+		<label for="home">Дом/Вилла</label>
+	</span>
+				<span class="search-form__check-box check-box">
+		<input type="checkbox" id="biznes">
+		<label for="biznes">Бизнес/Комерческая недвижемость</label>
+	</span>
+				<span class="search-form__price">
+		Цена:
+		<input type="text" class="search-form__input small" placeholder="от"> - <input type="text" class="search-form__input small" placeholder="до">
+	</span>
+				<div class="search-form__select-money">
+					<select name="" id="">
+			<option value="" selected>$</option>
+			<option value="" selected>P</option>
+		</select>
+				</div>
+				<input type="submit" value="Поиск" class="search-form__button">
+			</form>
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="block block__1000 block__left">
+							<p style="text-align: justify"><span class="text__logo">The Spain</span> - первый журнал о недвижимости во всей Испании. Теперь Вам не нужно искать
+								по многочисленным сайтам, мы уже сделали это. В <span class="text__logo">The Spain</span> мы собирали самые лучшие
+								агентства, те - которым можно доверять.Неважно, что Вы ищите: купить квартиру в Барселоне, купить дом в Ибице или
+								снять в аренду виллу на Коста Бланка, или может хотите построить дом в пригороде Мадрида? - посмотрите предложения,
+								свяжитесь с компанией, и Вы останетесь довольны. Мы обещаем.</p>
+
+							<h2 class="title">Продажа</h2>
+							<div class="card-product">
+								<div class="card-product__tags">
+									<span class="card-product__tags-title">Популярные направления: </span>
+									<ul class="card-product__tags-list">
+										<li class="card-product__tags-list-item">
+											<a href="barselona/?rent=Продажа">Барселона</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="villa-example-5.html?rent=Продажа">Villa example 5</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="valensiya/?rent=Продажа">Валенсия</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="alikante.html?rent=Продажа">Аликанте</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="madrid/?rent=Продажа">Мадрид</a>
+										</li>
+									</ul>
+								</div>
+								<ul class="card-product__list">
+									<li class="card-product__list-item">
+										<a href="villa-example-2.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Квартира</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example 2</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+									<li class="card-product__list-item">
+										<a href="villa-example-1.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Квартира</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example 1</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+									<li class="card-product__list-item">
+										<a href="villa-example.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Квартира</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+								</ul>
+							</div>
+
+							<h2 class="title">Аренда</h2>
+							<div class="card-product">
+								<div class="card-product__tags">
+									<span class="card-product__tags-title">Популярные направления: </span>
+									<ul class="card-product__tags-list">
+										<li class="card-product__tags-list-item">
+											<a href="villa-example-5.html?rent=Аренда">Villa example 5</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="valensiya/?rent=Аренда">Валенсия</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="alikante.html?rent=Аренда">Аликанте</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="madrid/?rent=Аренда">Мадрид</a>
+										</li>
+										<li class="card-product__tags-list-item">
+											<a href="merbelya.html?rent=Аренда">Мербелья</a>
+										</li>
+									</ul>
+								</div>
+								<ul class="card-product__list">
+									<li class="card-product__list-item">
+										<a href="villa-example-5.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Дом</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example 5</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+									<li class="card-product__list-item">
+										<a href="villa-example-4.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Дом</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example 4</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+									<li class="card-product__list-item">
+										<a href="villa-example-3.html">
+		<img src="/assets/components/phpthumbof/cache/cover.6ab16bdf49dfa6475ae661280cc8c13d.jpg" alt="">
+		<p class="title">Дом</p>
+		<table class="description">
+			<tr>
+				<td><p class="description__title">Villa example 3</p></td>
+				<td><p class="description__price">360000 €</p></td>
+			</tr>
+			<tr>
+				<td><p class="description__area">Площадь: <span>50 м<sup>2</sup></span></p></td>
+				<td><p class="description__room">Спален: <span></span></p></td>
+			</tr>
+		</table>
+	</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="block block__340 block__right">
+							<div class="what-you-find">
+								<p class="title">Что вы ищите?</p>
+								<p class="text">Арендовать или купить?</p>
+								<a href="#" class="what-you-find__button">
+			<img src="/uploads/images/application.png" alt="">
+			<span>Оставьте заявку для индивидуального подбора</span>
+		</a>
+							</div>
+							<a class="banner" href="#">
+		<img src="/uploads/banners/banner.jpg" alt="" class="banner__img">
+	</a>
+						</div>
+					</div>
+				</div>
+				<div class="cl"></div>
+				<div class="quick-search">
+					<h2 class="quick-search__title">Быстрый поиск</h2>
+					<div class="quick-search__row">
+						<div class="quick-search__column">
+							<ul class="quick-search__list">
+
+							</ul>
+						</div>
+						<div class="quick-search__column">
+							<ul class="quick-search__list">
+
+							</ul>
+						</div>
+						<div class="quick-search__column">
+							<ul class="quick-search__list">
+
+							</ul>
+						</div>
+						<div class="quick-search__column">
+							<ul class="quick-search__list">
+
+							</ul>
+						</div>
+						<div class="quick-search__column">
+							<ul class="quick-search__list">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="card-news">
+						<h2 class="title">Первые лица</h2>
+						<div class="card-news__row">
+							<div class="card-news__column">
+								<div class="card-news__column-content">
+									<a href="vash-shedevr-gotov.html"><img src="/assets/components/phpthumbof/cache/card-product.95918683f899953c5c47610fa59915e7.jpg" alt="Ваш шедевр готов"></a>
+									<div class="content">
+										<p class="title"><a href="vash-shedevr-gotov.html">Ваш шедевр готов</a></p>
+										<p class="text">Повседневная практика показывает, что новая модель организационной деятельности</p>
+										<p class="text-small">Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов)
+											участие в формировании новых предложений....</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-news__column">
+								<div class="card-news__column-content">
+									<a href="vash-shedevr-gotov-2.html"><img src="/assets/components/phpthumbof/cache/card-product.95918683f899953c5c47610fa59915e7.jpg" alt="Ваш шедевр готов 2"></a>
+									<div class="content">
+										<p class="title"><a href="vash-shedevr-gotov-2.html">Ваш шедевр готов 2</a></p>
+										<p class="text">Повседневная практика показывает, что новая модель организационной деятельности</p>
+										<p class="text-small">Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов)
+											участие в формировании новых предложений....</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-news">
+						<div class="card-news__row">
+							<div class="card-news__column">
+								<h2 class="title red">О переезде</h2>
+								<div class="card-news__column-content">
+									<a href="vash-shedevr-gotov-3.html"><img src="/assets/components/phpthumbof/cache/card-product.95918683f899953c5c47610fa59915e7.jpg" alt="Ваш шедевр готов 3"></a>
+									<div class="content">
+										<p class="title"><a href="vash-shedevr-gotov-3.html">Ваш шедевр готов 3</a></p>
+										<p class="text">Повседневная практика показывает, что новая модель организационной деятельности</p>
+										<p class="text-small">Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов)
+											участие в формировании новых предложений....</p>
+										<p class="text-small--all"><a href="o-pereezde/">Все статьи</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="card-news__column">
+								<h2 class="title red">О туризме</h2>
+								<div class="card-news__column-content">
+									<a href="vash-shedevr-gotov-4.html"><img src="/assets/components/phpthumbof/cache/card-product.95918683f899953c5c47610fa59915e7.jpg" alt="Ваш шедевр готов 4"></a>
+									<div class="content">
+										<p class="title"><a href="vash-shedevr-gotov-4.html">Ваш шедевр готов 4</a></p>
+										<p class="text">Повседневная практика показывает, что новая модель организационной деятельности</p>
+										<p class="text-small">Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов)
+											участие в формировании новых предложений....</p>
+										<p class="text-small--all"><a href="o-turizme/">Все статьи</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-map">
+					<div class="container">
+						<div class="row">
+							<div class="block block__1000 block__left">
+								<img src="/uploads/images/image-map.jpg" alt="" class="image-map__img">
+							</div>
+							<div class="block block__right block__340">
+								<a class="banner" href="#">
+					<img src="/uploads/banners/banner.jpg" alt="" class="banner__img">
+				</a>
+								<a class="banner" href="#">
+					<img src="/uploads/banners/banner_2.jpg" alt="" class="banner__img">
+				</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<h2 class="title"></h2>
+					<div class="text">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer__left">
+				<p class="footer__logo">The Spain</p>
+				<p class="footer__number">+7 928 282-29-29</p>
+				<p class="footer__number">+7 928 282-29-29</p>
+				<p class="footer__number">+7 928 282-29-29</p>
+				<p class="footer__adress">Барселона, площадь Каталонии 3</p>
+			</div>
+			<div class="footer__right">
+				<div class="footer__right-column">
+					<p class="footer__right-column-title">Главное меню</p>
+					<ul class="footer__right-list">
+						<li class="footer__right-list-item">
+							<a href="o-proekte.html">О проекте</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="kompaniyam.html">Компаниям</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="kontaktyi.html">Контакты</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer__right-column">
+					<p class="footer__right-column-title">Аренда</p>
+					<ul class="footer__right-list">
+						<li class="footer__right-list-item">
+							<a href="">Квартиры</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="">Дома и Виллы</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="">Бизнес</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right-column">
+					<p class="footer__right-column-title">Продажа</p>
+					<ul class="footer__right-list">
+						<li class="footer__right-list-item">
+							<a href="">Квартиры</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="">Дома и Виллы</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="">Бизнес</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right-column">
+					<p class="footer__right-column-title">Популярные направления</p>
+					<ul class="footer__right-list">
+						<li class="footer__right-list-item">
+							<a href="barselona/">Барселона</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="valensiya/">Валенсия</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="alikante.html">Аликанте</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="madrid/">Мадрид</a>
+						</li>
+						<li class="footer__right-list-item">
+							<a href="merbelya.html">Мербелья</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="js/plugins/jbcallme/jquery.jbcallme.js" type="text/javascript"></script>
+	<script src="js/plugins/vdrop/jquery.vdrop.min.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>
+</body>
+
+</html>
