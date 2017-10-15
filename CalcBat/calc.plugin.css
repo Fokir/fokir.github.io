@@ -1,0 +1,61 @@
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.cp-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.cp-container-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.cp-container h1 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    min-width: 100%;
+    padding: 0 10px;
+}
+
+.cp-input {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 4px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.cp-input label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.cp-input>* {
+    width: 100%;
+}
+
+.cp-input input, .cp-input select{
+    padding: 4px 22px 4px 8px;
+}
+
+.cp-result{
+    min-width: 100%;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+}
+
+.cp-input span{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    width: auto;
+}

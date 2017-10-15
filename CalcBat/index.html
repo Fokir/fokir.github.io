@@ -1,0 +1,72 @@
+  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">    
+
+    <script src="calc.plugin.js"></script>
+    <link rel="stylesheet" href="calc.plugin.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="draw"></form>
+    
+    <form id="draw2"></form>
+
+    <script>
+        $(function () {
+            $('#draw, #draw2').calculate({
+                cities: {
+                    'Ульяновск': 1,
+                    'Якутск': 2,
+                    'Якутск1': 2,
+                    'Якутск2': 2,
+                    'Якутск3': 2,
+                    'Якутск4': 2,
+                    'Якутск5': 2,
+                    'Якутск6': 2,
+                    'Якутск7': 2,
+                    'Якутск8': 2,
+                    'Якутск9': 2,
+                    'Якутск10': 2,
+                    'Якутск11': 2,
+                    'Якутск12': 2,
+                    'Якутск13': 2,
+                    'Якутск14': 2,
+                    'Якутск15': 2,
+                    'Якутск16': 2,
+                    'Якутск17': 2,
+                    'Якутск18': 2,
+                    'Якутск19': 2,
+                    'Якутск20': 2,
+                    'Якутск21': 2,
+                },
+                height: 2.7,
+                long: null,
+                width: null,
+                types: {
+                    'Панельный': 41,
+                    'Кирпичный': 34
+                }
+            }).on('calcalate:update', function (result) {
+                console.log('Q = ', result);
+            });
+        });
+    </script>
+</body>
+
+</html>
