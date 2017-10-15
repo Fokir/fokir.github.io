@@ -44,7 +44,6 @@
                             source: Object.keys(data.cities),
                             minLength: 0
                         }).on('focus', function () {
-                            console.log('1');
                             $(this).autocomplete('search', '');
                         });
                         if (data.city) $input.val(data.city);
@@ -63,7 +62,6 @@
                     $block.append($('<span/>').text('м'));
 
                     $input.on('keypress', function (event) {
-                        console.log(event.key);
                         if (event.key === ',' && $input.val().indexOf('.') === -1) {
                             $input.val($input.val() + '.');
                         }
