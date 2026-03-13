@@ -172,7 +172,7 @@ export const RU: Translations = {
         technologies: ['Angular 20', 'GSAP', 'TypeScript', 'SCSS', 'Angular CDK'],
         category: 'Личный',
         featured: false,
-        link: 'https://github.com/Fokir/fokir-portfolio',
+        link: 'https://github.com/Fokir/fokir.github.io',
       },
     ],
   },
