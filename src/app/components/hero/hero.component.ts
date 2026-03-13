@@ -186,14 +186,20 @@ import { gsap } from 'gsap';
       &__scroll-indicator {
         position: absolute;
         bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        right: 0;
+        width: fit-content;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 8px;
         z-index: 1;
         animation: float 3s ease-in-out infinite;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
 
         span {
           font-size: 0.7rem;
